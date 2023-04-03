@@ -3,7 +3,7 @@
     <head>
         <title> Bathhouse Gallery </title>
         <meta charset="UTF-8">
-      
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 
 
@@ -15,9 +15,15 @@
     position: absolute;
     width: 100vw;
     height: 110vh;
-    opacity: 0.5;
     z-index: 0.8;
+    animation: fadeIn 120s;
 }
+@keyframes fadeIn {
+  0% { opacity: 0};
+  80% {opacity:0.2};
+
+}
+
 .textinput {
     position:absolute;
     top: 50 px;
@@ -30,8 +36,8 @@
     position: absolute;
     width: 100vw;
     height: 110vh;
-    opacity: 0.2;
     z-index: 0.9;  
+    animation:fadeIn 120s
 }
 
   
@@ -255,9 +261,10 @@ button{
  
 
 <div id="openpage" class="openpage">
-<video loop autoplay muted id="waterbubble" src ="waterbubble.mp4" type="video/mp4"></video> 
-<video loop autoplay muted id="waterfall" src ="waterfall.mp4" type="video/mp4"></video> 
-    
+<video loop autoplay muted id="waterbubble" src ="pictures/waterbubble.mp4" type="video/mp4"></video> 
+<video loop autoplay muted id="waterfall" src ="pictures/waterfall.mp4" type="video/mp4"></video> 
+
+
 <div id="h1" class="text-box">
 <h1>The bubbles froth up, a fragrant scent fills the air.
 </h1>
@@ -298,9 +305,9 @@ button{
     </div>
 
 <form id="f">
-<label for="text-input">What's on your mind? Tell me your story:</label>
+<label for="text-input">Quiet your mind, let your soul to speak:</label>
 <input id="textinput" type="text" >
-<button type="button" onclick="addRandomText()">Chat</button>
+<button type="button" onclick="addRandomText()">Connect</button>
 </form>
 
 </div>
