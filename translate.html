@@ -1,0 +1,381 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Reinterpretation </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+
+/* .openpage {
+    position: relative;
+}
+
+/* #waterfall {
+    position: absolute;
+    width: 100vw;
+    height: 110vh;
+    z-index: 0.8;
+    animation: fadeIn 120s;
+}
+@keyframes fadeIn {
+  0% { opacity: 0};
+  80% {opacity:0.2};
+
+} */
+
+.textinput {
+    position:absolute;
+    top: 50 px;
+    color:antiquewhite
+    font-size: 10 px;
+}
+
+
+#waterbubble {
+    position: absolute;
+    width: 100vw;
+    height: 110vh;
+    z-index: 0.9;  
+    background-color: black;
+    
+}
+
+  
+.text-box {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  opacity:0;
+  transition: opacity 2s ease-in-out;
+  text-align: left;
+  background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: rainbow-glow 2s ease-in-out infinite;
+  cursor: zoom-in;
+
+}
+
+.text-box:hover{
+opacity:1;
+
+}
+/* 
+#h1 {
+  font-size: 20px;
+  top:20px;
+  left: 20px;
+  text-align: left;
+  background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: rainbow-glow 2s ease-in-out infinite;
+}
+   
+
+#h2 {
+    
+    font-size: 20px;
+    top: 300px;
+    text-align: left;
+    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: rainbow-glow 2s ease-in-out infinite;
+  }
+#h3 {
+    
+    font-size: 20px;
+    top: 400px;
+    text-align: left;
+    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: rainbow-glow 2s ease-in-out infinite;
+  }
+
+#h4 {
+    
+    font-size: 25px;
+    top: 600px;
+    text-align: left;
+    left:300px;
+    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: rainbow-glow 2s ease-in-out infinite;
+  }
+
+
+#h5 {
+    
+    font-size: 30px;
+    top: 39px;
+    text-align: left;
+    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: rainbow-glow 2s ease-in-out infinite;
+  }
+
+#h6 {
+    
+    font-size: 30px;
+    left:300px;
+    top: 50 px;
+    text-align: left;
+    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: rainbow-glow 2s ease-in-out infinite;
+  }
+  #h7 {
+    
+    font-size: 30px;
+    left:300px;
+    top: 50 px;
+    text-align: left;
+    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: rainbow-glow 2s ease-in-out infinite;
+  } */
+
+  .Chatting {
+ 
+ position: absolute;
+ font-size: 25px;
+ top: 50 px;
+ text-align: center;
+ background-image: linear-gradient(to right, rgb(243, 240, 243), rgb(248, 247, 249), rgb(244, 244, 247), rgb(247, 249, 247), rgb(254, 254, 254), rgb(245, 244, 242), red);
+ background-clip: text;
+ -webkit-background-clip: text;
+ color: transparent;
+ animation: rainbow-glow 2s ease-in-out infinite;
+}
+
+
+/* @keyframes rainbow-glow {
+  0% {
+    text-shadow: 0 0 10px violet;
+  }
+  17% {
+    text-shadow: 0 0 10px indigo;
+  }
+  34% {
+    text-shadow: 0 0 10px blue;
+  }
+  51% {
+    text-shadow: 0 0 10px green;
+  }
+  68% {
+    text-shadow: 0 0 10px yellow;
+  }
+  85% {
+    text-shadow: 0 0 10px orange;
+  }
+  100% {
+    text-shadow: 0 0 10px red;
+  }
+} */
+
+@keyframes rainbow-glow2 {
+  0% {
+    text-shadow: 0 0 10px rgb(251, 251, 251);
+  }
+  17% {
+    text-shadow: 0 0 10px rgba(3, 3, 3, 0.599);
+  }
+ 
+  100% {
+    text-shadow: 0 0 10px rgb(251, 251, 251);
+  }
+}
+
+form {
+position:absolute;
+z-index: 3;
+top: 400px;
+left: 400px
+}
+
+input[type=text] {
+  padding: 60px 100px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #d63fa646;
+  color: rgb(255, 255, 254);
+  font-size: 20px;
+  transition: width 0.4s ease-in-out;
+  width: 100%;
+}
+
+label {
+    
+
+    font-size: 20px;
+    transition: font-size 2s ease-in-out;
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(251, 247, 247), rgb(253, 252, 253));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: rainbow-glow2 2s ease-in-out infinite;
+   
+}
+
+label:hover {
+    font-size: 30px;
+
+}
+
+
+button{
+  background-color: #3604aa18;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  text-align: center;
+    animation: rainbow-glow2 2s ease-in-out infinite;
+    font-size: 20px;
+}
+ */
+
+
+</style>
+</head>
+
+<body>
+ 
+
+<div id="openpage" class="openpage">
+<video loop autoplay muted id="waterbubble" src ="picsfinal/moon.mp4" type="video/mp4"></video> 
+<!-- <video loop autoplay muted id="waterfall" src ="picsfinal/road.mp4" type="video/mp4"></video>  -->
+
+
+<div id="h1" class="text-box">
+<h1>The bubbles froth up, a fragrant scent fills the air.
+</h1>
+</div>
+
+<div id="h2" class="text-box">
+<h2> A place to unwind, to indulge and reminisce. </h2>
+</div>
+
+<div id="h3" class="text-box">
+<h3>In this little oasis, where my mind can wander.</h3>
+</div>
+
+<div id="h4" class="text-box">
+<h4> The world outside fades, as I slip into a dream. </h4>
+</div>
+
+<div id="h5" class="text-box">
+<h5>A space to relax and ease the weary mind. </h5>
+</div>
+
+<div id="h6" class="text-box">
+<h6> Nothing in the world is as soft and yielding as water. 
+<br>
+    <br>Yet for dissolving the hard and inflexible, 
+    <br>
+    <br>nothing can surpass it.
+  
+    </h6> 
+
+</div>
+
+<!-- <div id="h7" class="text-box">
+    <h6> The soft overcomes the hard; the gentle overcomes the rigid. 
+        
+        </h6> 
+    
+    </div>
+
+<form id="f">
+<label for="text-input">How would you reinterpret the night?</label>
+<input id="textinput" type="text" >
+<button type="button" onclick="addRandomText()">send it to the moon</button>
+</form>
+
+</div> -->
+
+
+
+<script>
+
+
+//produce random texts
+function addRandomText() {
+// Get the input value
+var inputText = document.getElementById("textinput").value;
+
+// Create a new text element with the input value
+
+var textElement = document.createElement("p");
+
+textElement.className="Chatting";
+
+textElement.innerHTML = inputText;
+
+// Generate random position
+var x = Math.floor(Math.random() * window.innerWidth);
+var y = Math.floor(Math.random() * window.innerHeight);
+
+// Set the position of the text element
+textElement.style.left = x + "px";
+textElement.style.top = y + "px";
+
+// Add the text element to the page
+document.getElementById("openpage").appendChild(textElement);
+}
+
+
+//drag the text around
+var dragItem = document.getElementById("f");
+
+var startX, startY, offsetX = 0, offsetY = 0;
+
+dragItem.addEventListener("mousedown", function(e) {
+startX = e.clientX;
+startY = e.clientY;
+offsetX = parseFloat(window.getComputedStyle(dragItem).left);
+offsetY = parseFloat(window.getComputedStyle(dragItem).top);
+        
+document.addEventListener("mousemove", onDrag);
+document.addEventListener("mouseup", onRelease);
+});
+
+function onDrag(e) {
+var x = offsetX + e.clientX - startX;
+var y = offsetY + e.clientY - startY;
+
+dragItem.style.left = x + "px";
+dragItem.style.top = y + "px";
+}
+
+function onRelease() {
+document.removeEventListener("mousemove", onDrag);
+document.removeEventListener("mouseup", onRelease);
+}
+
+
+</script>
+  
+</body>
+
+
+</html>
